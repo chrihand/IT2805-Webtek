@@ -6,7 +6,8 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header class="main-header">
+	<div id="wrapper">
+        <div id="header">
 		<div class="logo">
             <a href="home.html"><img src="images/logo.png" size=""></a>
 		</div>
@@ -17,12 +18,12 @@
 				<li class="nav-item"><a href="about.html">Om oss</a></li>
 				<li class="nav-item"><a href="contact.html">Kontakt</a></li>
 				<li class="nav-item"><a href="homepage.html">Hjem</a></li>
-				<li class="nav-item-basket"><a href="basket.html">Ant i handlekurv</a></li>
+				<li class="nav-item-basket"><a href="basket.html">#0</a></li>
 				<li class="nav-item"><a href="basket.html">Handlekurv</a></li>
 			</ul>
 		</nav>
-	</header>
-
+        </div><!-- end #main-header -->
+        <div id="content">
 	<section class="main-section">
 		<h2 class="section-title">Handlekurv</h2>
 		<p class="section-text"></p>
@@ -30,10 +31,12 @@
 		<p class="section-button"></p>
 		<p class="section-choose-number"></p>
 	</section>
-
-	<footer class="main-footer">
+        </div><!-- end #content -->
+        <div id="footer">
 		Glowee 2015 &copy;
-	</footer>
-
+            <div style="clear: both;"></div>
+        </div><!-- end #footer -->
+        <div style="clear: both;"></div>
+    </div><!-- end #wrapper -->
 </body>
 </html>
