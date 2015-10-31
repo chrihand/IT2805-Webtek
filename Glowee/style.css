@@ -63,3 +63,13 @@ h2 {
     padding-top: 20px;
     padding-left: 20px;
 }
+
+footer {
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    padding-top: 7px;
+    color: white;
+    background-color: #9E9E9E;
+    height: 23px;
+    position: relative;
+}
