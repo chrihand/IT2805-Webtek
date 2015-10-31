@@ -1,0 +1,48 @@
+body {
+    
+    margin-left: 100px, auto;
+    margin-right: 100px, auto;
+
+}
+
+.logo img {
+    width: 160px;
+    height: 90px;
+}
+
+.main-nav ul {
+    float: left;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: #9E9E9E;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.main-nav a {
+    display: block;
+    width: 100px;
+}
+
+.main-nav li {
+    display: inline;
+    float: left;
+}
+
+.full-nav-right ul {
+    float: left;
+    
+}
+
+.full-nav-right li {
+    float: left;
+    display: inline;
+}
+
+h2 {
+    font-family: "Arial", sans-serif;
+    color: #26FC00;
+    font-size: 34px;
+}
