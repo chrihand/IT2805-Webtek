@@ -59,6 +59,41 @@ html {
     display: inline;
 }
 
+.active-nav-item {
+    background-color: #666666;
+    color: #26FC00;
+}
+/*CSS for mouse over menu*/
+ #products
+  {
+   position: absolute;
+   visibility: hidden;
+   width: 118px;
+   text-decoration: none;
+   color: white;
+   font-family: "Arial", sans-serif;
+   font-size: 14px;
+   height: auto;
+}
+
+#products a
+  {
+   display: block;
+   width: auto;
+   padding: 9px;
+   text-decoration: none;
+   color: white;
+   font-family: "Arial", sans-serif;
+   font-size: 14px;
+}
+
+#products a:hover
+{
+    background-color: #666666;
+    color: #26FC00;
+}
+/*CSS for mouse over menu - end*/
+
 h2 {
     font-family: "Arial", sans-serif;
     color: #26FC00;
@@ -79,8 +114,10 @@ h2 {
     color: white;
     background-color: #9E9E9E;
     height: 23px;
-    margin-top: -23px;
-    position: absolute;
-    bottom: 3;
-    width: inherit;
+    margin-top: 100px;
+    width: 100%;
+    font-size: 12px;
+    bottom: 0px;
+    /* position: absolute; */
+    /* position: relative; */
 }

@@ -3,23 +3,30 @@
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" hret="style.css">
+	<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="logo">
+			<a href="../home.html"><img src="../images/logo.png" size=""></a>
 		</div>
 		<nav class="main-nav">
 			<ul class="full-nav">
-				<li class="nav-item"><a href="homepage.html">Hjem</a></li>
-				<li class="active-nav-item"><a href="products.html">Produkter</a></li>
-				<li class="nav-item"><a href="about.html">Om oss</a></li>
-				<li class="nav-item"><a href="contact.html">Kontakt</a></li>
-				<li class="nav-item"><a href="homepage.html">Hjem</a></li>
-			</ul>
-			<ul class="full-nav-right">
-				<li class="nav-item-basket"><a href="basket.html">Antall i handlekurv</a></li>
-				<li class="nav-item"><a href="basket.html">Handlekurv</a></li>
+				<li class="nav-item"><a href="../home.html">Hjem</a></li>
+				<li class="active-nav-item" id="product">
+					<a href="../products.html"
+						onmouseover="mouseOpen('products')">Produkter</a>
+					<ul id="products"
+						onmouseover="keepSubmenu()"
+						onmouseout="mouseClose()">
+						<a href="gloweeaccessories.html">Glowee accessories</a>
+						<a href="gloweesticks.html">GloweeSticks</a>
+					</ul>
+				</li>
+				<li class="nav-item"><a href="../about.html">Om oss</a></li>
+				<li class="nav-item"><a href="../contact.html">Kontakt</a></li>
+				<li class="nav-item-basket"><a href="../basket.html">#0</a></li>
+				<li class="nav-item"><a href="../basket.html">Handlekurv</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -65,9 +72,10 @@
         <p class="section-button"><input type="submit" name="submit" value="Kjøp" /></p>
 	</section>
 
-	<footer class="main-footer">
+	<footer id="footer">
 		Glowee 2015 &copy;
 	</footer>
 
+	<script src="../scripts/rollOverMenu.js"></script>
 </body>
 </html>
