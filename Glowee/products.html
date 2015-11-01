@@ -5,14 +5,23 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" hret="style.css">
 </head>
+
 <body>
 	<header class="main-header">
 		<div class="logo">
 		</div>
 		<nav class="main-nav">
-			<ul class="full-nav">
+			<ul id = "sddm">
 				<li class="nav-item"><a href="homepage.html">Hjem</a></li>
-				<li class="active-nav-item"><a href="products.html">Produkter</a></li>
+				<li class="active-nav-item"><a href="products.html"
+					mouseOver="mouseOpen('products')"
+					mouseClose="mouseClose()">Produkter</a>
+					<div id ='products'
+						mouseOver="mouseOpen('products')"
+						mouseClose="mouseClose()">
+					<a href="products/gloweeaccessories.html">Glowee accessories</a>
+					<a href="products/gloweesticks.html">GloweeSticks</a>
+				</li>
 				<li class="nav-item"><a href="about.html">Om oss</a></li>
 				<li class="nav-item"><a href="contact.html">Kontakt</a></li>
 				<li class="nav-item"><a href="homepage.html">Hjem</a></li>
@@ -36,5 +45,6 @@
 		Glowee 2015 &copy;
 	</footer>
 
+	<script src="scripts/rollOverMenu.js"></script>
 </body>
 </html>
