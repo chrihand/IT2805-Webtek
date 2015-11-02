@@ -121,3 +121,20 @@ h2 {
     /* position: absolute; */
     /* position: relative; */
 }
+
+/*CSS basket */
+
+#CartContent {
+    background-color: lightgray;
+    border-left: 20px;
+    width: 100%;
+}
+
+#CartContent .delete button {
+    color: red;
+}
+
+#CartContent .image img {
+    height: 100px;
+    width: 100px;
+}
