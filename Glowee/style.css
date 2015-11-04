@@ -11,6 +11,10 @@ html {
     min-height: 99%;
 }
 
+#content{
+    height: 100%;
+}
+
 .logo img {
     width: 160px;
     height: 90px;
@@ -24,6 +28,7 @@ html {
     height: 245px;
     margin-bottom: 20px;
 }
+/*CSS for menu-bar*/
 
 .main-nav ul {
     float: left;
@@ -111,7 +116,31 @@ html {
     color: #26FC00;
 }
 
-/*CSS for mouse over menu - end*/
+/*CSS for images*/
+
+.section-image {
+  margin-top: 10px;
+  width: 215px;
+  height: 182px;
+}
+
+#produktBilder{
+  height: 182px;
+  position: relative;
+}
+#bilde1{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-right: 20%;
+}
+#bilde2{
+  position: absolute;
+  top: 0;
+  padding-left: 20%;
+}
+
+/*CSS for text*/
 
 h2 {
     font-family: "Lucida Console", sans-serif;
@@ -128,13 +157,21 @@ h2 {
   text-transform: uppercase;
   color: grey;
   font-size: 20px;
+  padding-left: 20px;
 }
 
-#content{
-    height: 100%;
+.section-image-text a {
+  text-decoration: none;
+  color: grey;
+}
+
+.section-products-back a {
+  text-decoration: none;
+  color: grey;
 }
 
 #footer {
+
     text-align: center;
     font-family: "Arial", sans-serif;
     padding-top: 7px;
@@ -144,8 +181,8 @@ h2 {
     margin-top: 100px;
     width: 100%;
     font-size: 12px;
-    bottom: 0px;
-    /* position: absolute; */
+    bottom: 0;
+    position: absolute;
     /* position: relative; */
 }
 
