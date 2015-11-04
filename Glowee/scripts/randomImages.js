@@ -1,4 +1,4 @@
-var mySlideShow = document.getElementById("myPhoto");
+var mySlideShow = document.getElementById("slideShow");
 var imageArray = ["images/GloweeAccessories.png", "images/GloweeSticks.png", "images/GloweeGlasses.png", "images/GloweeHat.png"]
 var imageIndex = 0;
 

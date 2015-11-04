@@ -15,6 +15,15 @@ html {
     height: 90px;
 }
 
+.sectionImages #slideShow {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 925px;
+    height: 245px;
+    margin-bottom: 20px;
+}
+
 .main-nav ul {
     float: left;
     list-style-type: none;
