@@ -145,7 +145,7 @@ html {
 #produkter{
   height: 182px;
   position: relative;
-  padding-left: 20px;
+  padding-left: 10%;
 
 }
 #produkt2{
@@ -168,8 +168,8 @@ h2 {
     color: #26FC00;
     font-size: 34px;
     font-weight: 100;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 5%;
+    padding-left: 10%;
 }
 
 .news-text {
@@ -177,7 +177,7 @@ h2 {
   text-transform: uppercase;
   color: grey;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 10%;
 }
 
 .section-text {
@@ -192,6 +192,7 @@ h2 {
 .section-products-back a {
   text-decoration: none;
   color: grey;
+  margin-top: 2px;
 }
 
 .section-price {
@@ -202,6 +203,16 @@ h2 {
   color: grey;
 }
 
+.section-about {
+  margin-right: 20%;
+  margin-left: 20%;
+  color: grey;
+}
+
+.form {
+  padding-left: 10%;
+}
+
 #footer {
 
     text-align: center;
@@ -210,12 +221,12 @@ h2 {
     color: white;
     background-color: #9E9E9E;
     height: 23px;
-    margin-top: 100px;
     width: 100%;
     font-size: 12px;
     bottom: 0;
     position: absolute;
-    /*position: relative; */
+    /*position: relative;
+    clear: both;*/
 }
 
 /*CSS basket */
