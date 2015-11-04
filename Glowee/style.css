@@ -123,6 +123,13 @@ h2 {
     padding-left: 20px;
 }
 
+.section-text {
+  font-family: "Lucida Console", sans-serif;
+  text-transform: uppercase;
+  color: grey;
+  font-size: 20px;
+}
+
 #content{
     height: 100%;
 }
