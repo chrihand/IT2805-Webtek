@@ -128,16 +128,36 @@ html {
   height: 182px;
   position: relative;
 }
-#bilde1{
+#bilde2{
   position: absolute;
   right: 0;
   top: 0;
   padding-right: 20%;
 }
-#bilde2{
+#bilde1{
   position: absolute;
   top: 0;
   padding-left: 20%;
+}
+
+/*CSS for produkter*/
+
+#produkter{
+  height: 182px;
+  position: relative;
+  padding-left: 20px;
+
+}
+#produkt2{
+  position: absolute;
+  padding-right: 50%;
+  right: 0;
+  top: 0;
+}
+#produkt1{
+  position: absolute;
+  top: 0;
+  margin-right: 10px;
 }
 
 /*CSS for text*/
@@ -152,12 +172,16 @@ h2 {
     padding-left: 20px;
 }
 
-.section-text {
+.news-text {
   font-family: "Lucida Console", sans-serif;
   text-transform: uppercase;
   color: grey;
   font-size: 20px;
   padding-left: 20px;
+}
+
+.section-text {
+  color: grey;
 }
 
 .section-image-text a {
@@ -167,6 +191,14 @@ h2 {
 
 .section-products-back a {
   text-decoration: none;
+  color: grey;
+}
+
+.section-price {
+  color: grey;
+}
+
+.section-choose-number {
   color: grey;
 }
 
@@ -183,7 +215,7 @@ h2 {
     font-size: 12px;
     bottom: 0;
     position: absolute;
-    /* position: relative; */
+    /*position: relative; */
 }
 
 /*CSS basket */
