@@ -92,6 +92,15 @@ html {
     background-color: #666666;
     color: #26FC00;
 }
+
+.main-nav ul li a {
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
 /*CSS for mouse over menu - end*/
 
 h2 {
