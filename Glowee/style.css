@@ -113,7 +113,8 @@ html {
 /*CSS for mouse over menu - end*/
 
 h2 {
-    font-family: "Arial", sans-serif;
+    font-family: "Lucida Console", sans-serif;
+    text-transform: uppercase;
     color: #26FC00;
     font-size: 34px;
     font-weight: 100;
