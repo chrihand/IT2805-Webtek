@@ -11,7 +11,7 @@ else if (hourNow > 12) {
     greeting = "God ettermiddag, og velkommen til Glowee!"
 }
 else if (hourNow > 0) {
-    greeting = "God morgen, og velkommen til Glowee"
+    greeting = "God morgen, og velkommen til Glowee!"
 }
 else {
     greeting = "Velkommen til Glowee!"
