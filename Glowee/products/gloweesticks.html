@@ -42,19 +42,31 @@
 		<p class="section-image-text"><a href="gloweesticks/gloweesticks_red.html">GloweeStick Rød</a>
 		<p class="section-price">29 kr</p>
 		<p class="section-choose-number" id="amount"> 
-			<label for="type">Antall:</label>
-				<select name="number" required>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-                </select>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="PPNV95WVMFLEQ">
+        <table>
+            <tr>
+                <td>Antall:</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                </td>
+            </tr>
+        </table>
+            <br>
+            <input type="hidden" name="currency_code" value="NOK">
+            <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+        </table>
+        </form>
         </p>
-        <p class="section-button"><input type="submit" name="submit" value="Kjøp" /></p>
 
     </div>
     <div id = "produkt2">
@@ -64,19 +76,30 @@
 		<p class="section-image-text"><a href="gloweesticks/gloweesticks_blue.html">GloweeStick Blå</a>
 		<p class="section-price">29 kr</p>
 		<p class="section-choose-number" id="amount"> 
-			<label for="type">Antall:</label>
-				<select name="number" required>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
-					<option value="6">6</option>
-					<option value="7">7</option>
-					<option value="8">8</option>
-                </select>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="UKVHDFCSPZ9DA">
+        <table>
+            <tr>
+                <td>Antall:</td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                </td>
+            </tr>
+        </table>
+            <br>
+        <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+        
+        </form>
         </p>
-        <p class="section-button"><input type="submit" name="submit" value="Kjøp" id="buyButton" /></p>
 	</section>
 </div>
 </div>
