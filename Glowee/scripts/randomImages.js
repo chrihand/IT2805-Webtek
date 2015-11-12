@@ -1,6 +1,6 @@
 
     var mySlideShow = document.getElementById("slideShow");
-    var imageArray = ["../images/GloweeSlideshow1.png", "../images/GloweeSlideshow2.png", "../images/GloweeSlideshow1.png", "../images/GloweeSlideshow2.png"]
+    var imageArray = ["../images/GloweeSlideshow1.png", "../images/GloweeSlideshow2.png", "../images/GloweeSlideshow3.jpg", "../images/GloweeSlideshow2.png"]
     var imageIndex = 0;
 
     function changeImage() {
