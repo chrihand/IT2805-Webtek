@@ -4,10 +4,12 @@
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--<script src="../scripts/jquery-2.1.4.min.js"></script>-->
 <script> 
 $(function(){
-$("#header").load("header.html"); 
+$("#header").load("header.html");
+$("#footer").load("footer.html");
 });
 </script> 
 </head>
@@ -20,13 +22,10 @@ $("#header").load("header.html");
 		<img src="../images/GloweeSlideshow2.png" id="slideShow">
 	</section>
 
-	<footer id="footer">
-		Glowee 2015 &copy;
-	</footer>
+<div id="footer"></div>
 
 	<script src="../scripts/rollOverMenu.js"></script>
     <script src="../scripts/greeting.js"></script>
     <script src="../scripts/randomImages.js"></script>
-    <script src="../scripts/footer.js"></script>
 </body>
 </html>
