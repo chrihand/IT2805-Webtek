@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glowee</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../style/style.css">
+	<script src="../scripts/contact.js"></script>
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+    $(function(){
+    $("#header").load("header.html"); 
+    });
+    </script> 
+    </head>
+
+<body>
+<div id="header"></div>
+
+	<section class="main-section">
+		<h2 class="section-title">Kontakt Oss</h2>
+		<p class="news-text">Klart vi hjelper!</p>
+	</header>
+
+	<div class = "form">
+	<form name="kontaktform" id="kontaktSkjema" method="post">
+        <main>
+			<div class= "section-text">Navn: *</div>
+			<input type="text" name="name" placeholder=" fullt navn" style="width: 400px; border-radius: 5px;" id="navnFelt">
+			<br>
+			<br>
+			<div class= "section-text">Email: *</div>
+			<input type="text" name="email" placeholder=" email@example.com" style="width: 400px; border-radius: 5px;" id="epost">
+			<br>
+			<br>
+			<div class= "section-text">Adresse:</div>
+			<input type="text" name="address" placeholder=" adresse" style="width: 400px; border-radius: 5px;">
+			<br>
+			<br>
+			<div class= "section-text">Telefonnummer:</div>
+			<input type="text" name="phone" placeholder=" telefonnummer.." style="width: 400px; border-radius: 5px;">
+			<br>
+			<br>
+            <div class= "section-text">Henvendelsen gjelder:</div>
+			<br>
+            <textarea name="kommentar" placeholder="skriv en kommentar" style="width: 400px; height: 160px; border-radius: 5px;" id="tekstFelt"></textarea>
+			<br>
+			<input type="submit" value="Send">
+        </main>
+	</form>
+		</div>
+	</section>
+
+	<footer id="footer">
+		Glowee 2015 &copy;
+	</footer>
+
+	<script src="../scripts/rollOverMenu.js"></script>
+</body>
+</html>
