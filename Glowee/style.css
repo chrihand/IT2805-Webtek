@@ -213,6 +213,8 @@ h2 {
   padding-left: 10%;
 }
 
+/* FOOTER */
+
 #footer {
 
     text-align: center;
@@ -220,32 +222,9 @@ h2 {
     padding-top: 7px;
     color: white;
     background-color: #9E9E9E;
-    height: 23px;
+    height: 32px;
     width: 100%;
     font-size: 12px;
     bottom: 0;
     position: absolute;
-    /*position: relative;
-    clear: both;*/
-}
-
-/*CSS basket */
-
-#CartContent {
-    background-color: lightgray;
-    border-left: 20px;
-    width: 100%;
-}
-
-#CartContent .delete button {
-    color: red;
-}
-
-#CartContent .image img {
-    height: 100px;
-    width: 100px;
-}
-
-#basket_button image {
-    
 }
