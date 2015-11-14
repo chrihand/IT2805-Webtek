@@ -204,8 +204,8 @@ h2 {
 
 .section-products-back a {
   text-decoration: none;
+  padding-left: 12%;
   color: grey;
-  margin-top: 2px;
 }
 
 .section-price {
@@ -250,7 +250,6 @@ td {
 
 .page-wrap {
   min-height: 100%;
-  /* equal to footer height */
   margin-bottom: 100px; 
 }
 .page-wrap:after {
