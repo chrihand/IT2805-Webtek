@@ -1,6 +1,7 @@
 html,body {
     height: 100%;
-    min-width: 80%;
+    min-width: 800px;
+    margin: 0;
 }
 
 #wrapper {
@@ -155,22 +156,23 @@ html,body {
 /*CSS for produkter*/
 
 #produkter{
-  height: 182px;
-  position: relative;
   padding-left: 12%;
   padding-bottom: 30px;
+  display: inline-block;
 
 }
 #produkt2{
-  position: absolute;
-  padding-right: 50%;
-  right: 0;
-  top: 0;
+  display: block;
+  width: 45%;
+  float: left;
+  margin-left: 20px;
 }
 #produkt1{
-  position: absolute;
-  top: 0;
   margin-right: 10px;
+  display: block;
+  width: 45%;
+  margin-left: 10px;
+  float: left;
 }
 
 /*CSS for text*/
