@@ -17,8 +17,9 @@ html {
 }
 
 .logo img {
-    width: 160px;
-    height: 90px;
+    width: 240px;
+    height: 135px;
+    padding-left: 10%;
 }
 
 #slideShow {
@@ -65,6 +66,11 @@ html {
     height: 35px;
 }
 
+.first-nav-item {
+  position: relative;
+  padding-left: 10%;
+}
+
 .main-nav ul li a {
   -webkit-transition: color .25s;
   -moz-transition: color .25s;
@@ -75,7 +81,6 @@ html {
 
 .full-nav-right ul {
     float: left;
-    
 }
 
 .full-nav-right li {
@@ -88,6 +93,7 @@ html {
     color: #26FC00;
 }
 /*CSS for mouse over menu*/
+
  #products
   {
    position: absolute;
@@ -205,13 +211,16 @@ h2 {
 }
 
 .section-about {
+  padding-top: 2%;
   margin-right: 20%;
   margin-left: 20%;
   color: grey;
 }
 
 .form {
-  padding-left: 10%;
+  padding-top: 2%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 /* FOOTER */
@@ -227,5 +236,4 @@ h2 {
     width: 100%;
     font-size: 12px;
     bottom: 0;
-    position: absolute;
 }
