@@ -1,5 +1,14 @@
+<!--
+    FILE NAME: html/accessories_glasses.html
+    WRITTEN BY: Christina H. Andresen
+    WHEN: November 2016
+    PURPOSE: One of the products in the shop
+-->
+
 <!DOCTYPE html>
 <html>
+
+<!-- Page title, link to style cheet and javascript for loading nav and footer -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
@@ -7,55 +16,59 @@
     <script src="../scripts/jquery-1.11.3.min.js"></script>
     <script> 
     $(function(){
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
     });
     </script> 
-    </head>
+</head>
+
+<!-- Body, main element on page -->
 <body>
     <div class ="page-wrap">
-<div id="header"></div>
+        <div id="header"></div>
+        <section class="main-section">
+            <!-- Go back to the product site -->
+            <p class="section-products-back"><a href="gloweeaccessories.html">&lt; Tilbake til Glowee Accessories</a></p>
+            
+            <!-- The product -->
+            <h2>Glowee Briller</h2>
+            <div id = "produkter">
+                <img class="section-image" alt="Glowee Glasses" src="../images/GloweeGlasses.jpeg">
+                <p class="section-text">Glowee accessories briller, er flere glowsticks satt sammen til briller. Disse gir den optimale stemningen på alle fester!</p>
+                <p class="section-price" id="price">99 kr</p>
 
-	<section class="main-section">
-		<p class="section-products-back"><a href="gloweeaccessories.html">&lt; Tilbake til Glowee Accessories</a></p>
-		<h2 class="section-title">Glowee Briller</h2>
+                <!-- Paypal button -->
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="7K82V5S887NF8">
+                    <table>
+                        <tr>
+                            <td>Antall:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                            </td>
+                        </tr>
+                        </table>
+                        <br>
+                        <input type="image" src="../images/addToCart.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+                </form>
+            </p>
+            </div>
+        </div>
+        </section>
 
-		<div id = "produkter">
-		<img class="section-image" src="../images/GloweeGlasses.jpeg">
-		<p class="section-text">Glowee accessories briller, er flere glowsticks satt sammen til briller. Disse gir den optimale stemningen på alle fester!</p>
-		<p class="section-price" id="price">99 kr</p>
-		<p class="section-choose-number"> 
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="7K82V5S887NF8">
-        <table>
-            <tr>
-                <td>Antall:</td>
-            </tr>
-            <tr>
-                <td>
-                    <select name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                </td>
-            </tr>
-        </table>
-            <br>
-        <input type="image" src="../images/addToCart.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
-        </form>
-        </p>
-    </div>
-</div>
-    </section>
-
+    <!-- Footer -->
 	<div id="footer"></div>
 
+    <!-- Javascripts -->
 	<script src="../scripts/rollOverMenu.js"></script>
-    <script src="../scripts/add_to_SS.js"></script>
-
 </body>
 </html>

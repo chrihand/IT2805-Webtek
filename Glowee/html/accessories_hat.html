@@ -1,5 +1,14 @@
+<!--
+    FILE NAME: html/accessories_glasses.html
+    WRITTEN BY: Christina H. Andresen
+    WHEN: November 2016
+    PURPOSE: One of the products in the shop
+-->
+
 <!DOCTYPE html>
 <html>
+
+<!-- Page title, link to style cheet and javascript for loading nav and footer -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
@@ -8,55 +17,59 @@
     <script src="../scripts/jquery-2.1.4.min.js"></script>
     <script> 
     $(function(){
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
     });
     </script> 
-    </head>
+</head>
+
+<!-- Body, main element on page -->
 <body>
-<div class ="page-wrap">
-<div id="header"></div>
+    <div class ="page-wrap">
+        <div id="header"></div>
+        <section class="main-section">
+            <!-- Go back to the product site -->
+            <p class="section-products-back"><a href="gloweeaccessories.html">&lt; Tilbake til Glowee Accessories</a></p>
 
-	<section class="main-section">
-		<p class="section-products-back"><a href="gloweeaccessories.html">&lt; Tilbake til Glowee Accessories</a></p>
-		<h2 class="section-title">Glowee Hatt</h2>
+            <!-- The product -->
+            <h2>Glowee Hatt</h2>
+            <div id ="produkter">
+                <img class="section-image" alt="Glowee Hat" src="../images/GloweeHat.jpeg">
+                <p class="section-text">Glowee accessories hatt, er flere glowsticks satt sammen til en hatt. Denne er perfekt for enhver fest!</p>
+                <p class="section-price">149 kr</p>
 
-		<div id ="produkter">
-		<img class="section-image" src="../images/GloweeHat.jpeg">
-		<p class="section-text">Glowee accessories hatt, er flere glowsticks satt sammen til en hatt. Denne er perfekt for enhver fest!</p>
-		<p class="section-price">149 kr</p>
-		<p class="section-choose-number" id="amount"> 
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="9HXZM3YN5JVFC">
-        <table>
-            <tr>
-                <td>Antall:</td>
-            </tr>
-            <tr>
-                <td>
-                    <select name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                </td>
-            </tr>
-        </table>
-            <br>
-        <input type="image" src="../images/addToCart.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
-        </form>
+                <!-- Paypal button -->
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="9HXZM3YN5JVFC">
+                    <table>
+                        <tr>
+                            <td>Antall:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </td>
+                            </tr>
+                        </table>
+                        <br>
+                        <input type="image" src="../images/addToCart.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+                    </form>
+                </p>
+            </div>
+        </div>
+        </section>
 
-        </p>
-    </div>
-</div>
-    </section>
+    <!-- Footer -->
+    <div id="footer"></div>
 
-<div id="footer"></div>
-
+    <!-- Javascripts -->
 	<script src="../scripts/rollOverMenu.js"></script>
-
 </body>
 </html>
