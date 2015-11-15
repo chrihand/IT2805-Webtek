@@ -1,6 +1,6 @@
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
+var today = new Date(); //Creates a new date object
+var hourNow = today.getHours(); //Gets the time att this moment in hours
+var greeting; //Creates an empty variable, to be set later in the program
 
 var sourceTxt = document.getElementById("sectionTitle");
 
@@ -16,5 +16,7 @@ else if (hourNow >= 0) {
 else {
     greeting = "Velkommen til Glowee"
 }
+
+// The code above sets the greeting variable to the given phrase, depending on the time of day.
 
 sourceTxt.innerHTML = greeting;
