@@ -1,33 +1,50 @@
+<!--
+    FILE NAME: html/home.html
+    WRITTEN BY: Ingrid Skar
+    WHEN: November 2016
+    PURPOSE: Homepage for the site
+-->
+
 <!DOCTYPE html>
 <html>
+<!-- Page title and link to style sheet-->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-    $("#footer").load("footer.html");
-    });
-    </script> 
-</script> 
 </head>
+
+<!-- Body, main element on page -->
 <body>
 	<div class ="page-wrap">
-<div id="header"></div>
 
-	<section class="main-section">
-		<h2 class="section-title" id="sectionTitle">Velkommen til Glowee</h2>
-		<p class="news-text">Bli festens midtpunkt med glowsticks fra Glowee!</p>
-		<img src="../images/GloweeSlideshow2.png" id="slideShow">
-	</section>
-</div>
+		<!-- Header -->
+		<div id="header"></div>
 
-<div id="footer"></div>
+		<!--Main section of page. -->
+		<section class="main-section">
+			<h2 class="section-title" id="sectionTitle">Velkommen til Glowee</h2>
+			<p class="news-text">Bli festens midtpunkt med glowsticks fra Glowee!</p>
+			<!-- The slide show -->
+			<img src="../images/GloweeSlideshow2.png" id="slideShow">
+		</section>
 
-	<script src="../scripts/rollOverMenu.js"></script>
-    <script src="../scripts/greeting.js"></script>
-    <script src="../scripts/randomImages.js"></script>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer"></div>
+
+	<!-- Javascripts -->
+	<script src="../scripts/jquery-1.11.3.min.js"></script>
+	<script> 
+		$(function() {
+			$("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+    		$("#footer").load("footer.html");
+    	});
+    </script> 
+    <script src="../scripts/rollOverMenu.js">// loads drop down menu</script>
+    <script src="../scripts/greeting.js">// loads greeting message</script>
+    <script src="../scripts/randomImages.js">// loads slide show</script>
+
 </body>
 </html>
