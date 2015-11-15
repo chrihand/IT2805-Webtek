@@ -8,23 +8,17 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Page title, link to style cheet and javascript for loading nav and footer -->
+<!-- Page title and link to style sheet -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-        $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-        $("#footer").load("footer.html");
-    });
-    </script> 
 </head>
 
 <!-- Body, main element on page -->
 <body>
     <div class ="page-wrap">
+        <!-- Header -->
         <div id="header"></div>
         <section class="main-section">
             <!-- Go back to the product site -->
@@ -63,13 +57,22 @@
                     </form>
                 </p>
             </div>
-        </div>
         </section>
+        </div>
 
     <!-- Footer -->
     <div id="footer"></div>
 
     <!-- Javascripts -->
+    <!-- Javascript for loading nav and footer -->
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+            $("#footer").load("footer.html");
+        });
+    </script> 
+    <!-- Javascript for loading mouse over menu -->
 	<script src="../scripts/rollOverMenu.js"></script>
 </body>
 </html>

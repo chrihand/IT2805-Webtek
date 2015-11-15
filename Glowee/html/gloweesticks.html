@@ -1,98 +1,119 @@
+<!--
+    FILE NAME: html/accessories_glasses.html
+    WRITTEN BY: Christina H. Andresen
+    WHEN: November 2016
+    PURPOSE: One of the products in the shop
+-->
+
 <!DOCTYPE html>
 <html>
+
+<!-- Page title and link to style sheet -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-    $("#footer").load("footer.html");
-    });
-    </script> 
-    </head>
+</head>
+
+<!-- Body, main element on page -->
 <body>
     <div class ="page-wrap">
-<div id="header"></div>
+        <!-- Header -->
+        <div id="header"></div>
+        <section class="main-section">
+            <!-- Go back to the product site -->
+            <p class="section-products-back"><a href="products.html">&lt; Tilbake til produkter</a></p>
 
-	<section class="main-section">
-		<p class="section-products-back"><a href="products.html">&lt; Tilbake til produkter</a></p>
-		<h2 class="section-title">GloweeSticks</h2>
+            <!-- Product section -->
+            <h2 class="section-title">GloweeSticks</h2>
+            <div id ="produkter">
+                <div id = "produkt1">
+                    <a href="gloweesticks_red.html"><img class="section-image" alt="Gloweesticks Red" src="../images/GloweestickRed.jpg"></a>
+                    <br>
+                    <p class="section-image-text"><a href="gloweesticks_red.html">GloweeStick Rød</a>
+                    <p class="section-price">29 kr</p>
 
-		<div id ="produkter">
-			<div id = "produkt1">
+                    <!-- Paypal button -->
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <!-- This and all the code inside the table below adds the respective items to the PayPal shopping cart. -->
+                    <input type="hidden" name="hosted_button_id" value="7K82V5S887NF8">
+                    <table>
+                        <tr>
+                            <td>Antall:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                            </td>
+                        </tr>
+                        </table>
+                        <br>
+                        <!-- Imports the "add to cart buttons" -->
+                        <input type="hidden" name="currency_code" value="NOK">
+                        <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+                    </form>
+                </p>
+            </div>
 
-		<a href="gloweesticks_red.html"><img class="section-image" src="../images/GloweestickRed.jpg"></a>
-		<br>
-		<p class="section-image-text"><a href="gloweesticks_red.html">GloweeStick Rød</a>
-		<p class="section-price">29 kr</p>
-		<p class="section-choose-number" id="amount"> 
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="PPNV95WVMFLEQ"> <!-- This and all the code inside the table below adds the respective items to the PayPal shopping cart. -->
-        <table>
-            <tr>
-                <td>Antall:</td>
-            </tr>
-            <tr>
-                <td>
-                    <select name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                </td>
-            </tr>
-        </table>
-            <br>
-            <input type="hidden" name="currency_code" value="NOK">
-            <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet."> <!-- Imports the "add to cart buttons" -->
-        </table>
-        </form>
-        </p>
+            <!-- Product section -->
+            <div id = "produkt2">
+                <a href="gloweesticks_blue.html"><img class="section-image" alt="Gloweesticks blue" src="../images/gloweestickBlue.jpg"></a>
+                <br>
+                <p class="section-image-text"><a href="gloweesticks_blue.html">GloweeStick Blå</a>
+                <p class="section-price">29 kr</p>
 
+                <!-- Paypal button -->
+                <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+
+                    <!-- This and all the code inside the table below adds the respective items to the PayPal shopping cart. -->
+                    <input type="hidden" name="hosted_button_id" value="UKVHDFCSPZ9DA">
+                    <table>
+                        <tr>
+                            <td>Antall:</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="quantity">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                            </td>
+                        </tr>
+                        </table>
+                        <br>
+                        <!-- Imports the "add to cart buttons" -->
+                        <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet.">
+                    </form>
+                </p>
+                </div>
+            </section>
+        </div>
     </div>
-    <div id = "produkt2">
 
-		<a href="gloweesticks_blue.html"><img class="section-image" src="../images/gloweestickBlue.jpg"></a>
-		<br>
-		<p class="section-image-text"><a href="gloweesticks_blue.html">GloweeStick Blå</a>
-		<p class="section-price">29 kr</p>
-		<p class="section-choose-number" id="amount"> 
-        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="UKVHDFCSPZ9DA"> <!-- This and all the code inside the table below adds the respective items to the PayPal shopping cart. -->
-        <table>
-            <tr>
-                <td>Antall:</td>
-            </tr>
-            <tr>
-                <td>
-                    <select name="quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                </td>
-            </tr>
-        </table>
-            <br>
-        <input type="image" src="../images/addToCartSmall.png" border="0" name="submit" alt="PayPal – den trygge og enkle metoden for å betale på nettet."> <!-- Imports the "add to cart buttons" -->
-        
-        </form>
-        </p>
-	</section>
-</div>
-</div>
-</div>
+    <!-- Footer -->
+    <div id="footer"></div>
 
-<div id="footer"></div>
-
-	<script src="../scripts/rollOverMenu.js"></script>
+    <!-- Javascripts -->
+    <!-- Javascript for loading nav and footer -->
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+            $("#footer").load("footer.html");
+        });
+    </script> 
+    <!-- Javascript for loading mouse over menu -->
+    <script src="../scripts/rollOverMenu.js"></script>
 </body>
 </html>

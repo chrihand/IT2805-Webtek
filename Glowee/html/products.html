@@ -1,40 +1,54 @@
+<!--
+    FILE NAME: html/accessories_glasses.html
+    WRITTEN BY: Christina H. Andresen
+    WHEN: November 2016
+    PURPOSE: One of the products in the shop
+-->
+
 <!DOCTYPE html>
 <html>
+
+<!-- Page title and link to style sheet -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-    $("#footer").load("footer.html");
-    });
-    </script> 
     </head>
 
+<!-- Body, main element on page -->
 <body>
 	<div class ="page-wrap">
-<div id="header"></div>
+		<!-- Header -->
+		<div id="header"></div>
+		<section class="main-section">
+			<h2 class="section-title">Produkter</h2>
+			<div id="produktBilder">
+				<div id="bilde1">
+					<a href="gloweeaccessories.html"><img class="section-image" alt="Glowee Hat" src="../images/GloweeHat.jpeg"></a>
+					<p class="section-image-text"><a href="gloweeaccessories.html">Glowee accessories</a>
+				</div>
 
-	<section class="main-section">
-		<h2 class="section-title">Produkter</h2>
-		<div id="produktBilder">
-			<div id="bilde1">
-				<a href="gloweeaccessories.html"><img class="section-image" src="../images/GloweeHat.jpeg"></a>
-			<p class="section-image-text"><a href="gloweeaccessories.html">Glowee accessories</a></div>
-			
-			<div id="bilde2">
-				<a href="gloweesticks.html"><img class="section-image" src="../images/GloweeSticks.jpeg"></a>
-			<p class="section-image-text"><a href="gloweesticks.html">GloweeSticks</a></p></div>
-			
-		</div>
-		
-		</div>
-	</section>
+				<div id="bilde2">
+					<a href="gloweesticks.html"><img class="section-image" alt="Glowee Sticks" src="../images/GloweeSticks.jpeg"></a>
+					<p class="section-image-text"><a href="gloweesticks.html">GloweeSticks</a></p>
+				</div>
+			</div>
+		</section>
+	</div>
 
-<div id="footer"></div>
+	<!-- Footer -->
+	<div id="footer"></div>
 
-	<script src="../scripts/rollOverMenu.js"></script>
+	<!-- Javascripts -->
+    <!-- Javascript for loading nav and footer -->
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+            $("#footer").load("footer.html");
+        });
+    </script> 
+    <!-- Javascript for loading mouse over menu -->
+    <script src="../scripts/rollOverMenu.js"></script>
 </body>
 </html>
