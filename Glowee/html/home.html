@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!--
     FILE NAME: html/home.html
     WRITTEN BY: Ingrid Skar
@@ -5,7 +6,6 @@
     PURPOSE: Homepage for the site
 -->
 
-<!DOCTYPE html>
 <html>
 <!-- Page title and link to style sheet-->
 <head>
@@ -26,7 +26,7 @@
 			<h2 class="section-title" id="sectionTitle">Velkommen til Glowee</h2>
 			<p class="news-text">Bli festens midtpunkt med glowsticks fra Glowee!</p>
 			<!-- The slide show -->
-			<img src="../images/GloweeSlideshow2.png" id="slideShow">
+			<img src="../images/GloweeSlideshow2.png" alt="Glowee slide show 2" id="slideShow">
 		</section>
 
 	</div>
@@ -42,9 +42,12 @@
     		$("#footer").load("footer.html");
     	});
     </script> 
-    <script src="../scripts/rollOverMenu.js">// loads drop down menu</script>
-    <script src="../scripts/greeting.js">// loads greeting message</script>
-    <script src="../scripts/randomImages.js">// loads slide show</script>
+    <!-- Javascript for loading mouse over menu -->
+    <script src="../scripts/rollOverMenu.js"></script>
+    <!-- Javascript for loading greeting message -->
+    <script src="../scripts/greeting.js"></script>
+    <!-- Javascript for loading slide show -->
+    <script src="../scripts/randomImages.js"></script>
 
 </body>
 </html>

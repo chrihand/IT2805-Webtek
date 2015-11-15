@@ -1,59 +1,77 @@
 <!DOCTYPE html>
+
+<!--
+    FILE NAME: html/contact.html
+    WRITTEN BY: Lars Vattøy
+    WHEN: November 2016
+    PURPOSE: For costumers to contact Glowee
+-->
+
 <html>
+
+<!-- Page title and link to style sheet -->
 <head>
 	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-    $("#footer").load("footer.html");
-    });
-    </script> 
-    </head>
+</head>
 
+<!-- Body, main element on page -->
 <body>
 	<div class ="page-wrap">
-<div id="header"></div>
+		<!-- Header -->
+		<div id="header"></div>
+		<section class="main-section">
+			<h2 class="section-title">Kontakt Oss</h2>
+			<p class="news-text">Klart vi hjelper!</p>
 
-	<section class="main-section">
-		<h2 class="section-title">Kontakt Oss</h2>
-		<p class="news-text">Klart vi hjelper!</p>
-	</header>
+			<!-- A form for contacting Glowee, validates by javascript-->
+			<div class = "form">
+				<form name="kontaktform" id="kontaktSkjema" method="post">
+					<main>
+					<div class= "section-text">Navn: *</div>
+					<input type="text" name="name" placeholder=" fullt navn" style="width: 400px; border-radius: 5px;" id="navnFelt">
+					<br>
+					<br>
+					<div class= "section-text">Email: *</div>
+					<input type="text" name="email" placeholder=" email@example.com" style="width: 400px; border-radius: 5px;" id="epost">
+					<br>
+					<br>
+					<div class= "section-text">Adresse:</div>
+					<input type="text" name="address" placeholder=" adresse" style="width: 400px; border-radius: 5px;">
+					<br>
+					<br>
+					<div class= "section-text">Telefonnummer:</div>
+					<input type="text" name="phone" placeholder=" telefonnummer.." style="width: 400px; border-radius: 5px;">
+					<br>
+					<br>
+					<div class= "section-text">Henvendelsen gjelder
+					</div>
+					<br>
+					<textarea name="kommentar" placeholder="skriv en kommentar" style="width: 400px; height: 160px; border-radius: 5px;" id="tekstFelt"></textarea>
+					<br>
+					<input type="submit" value="Send">
+				</main>
+				</form>
+			</div>
+		</section>
+	</div>
 
-	<div class = "form">
-	<form name="kontaktform" id="kontaktSkjema" method="post">
-        <main>
-			<div class= "section-text">Navn: *</div>
-			<input type="text" name="name" placeholder=" fullt navn" style="width: 400px; border-radius: 5px;" id="navnFelt">
-			<br>
-			<br>
-			<div class= "section-text">Email: *</div>
-			<input type="text" name="email" placeholder=" email@example.com" style="width: 400px; border-radius: 5px;" id="epost">
-			<br>
-			<br>
-			<div class= "section-text">Adresse:</div>
-			<input type="text" name="address" placeholder=" adresse" style="width: 400px; border-radius: 5px;">
-			<br>
-			<br>
-			<div class= "section-text">Telefonnummer:</div>
-			<input type="text" name="phone" placeholder=" telefonnummer.." style="width: 400px; border-radius: 5px;">
-			<br>
-			<br>
-            <div class= "section-text">Henvendelsen gjelder:</div>
-			<br>
-            <textarea name="kommentar" placeholder="skriv en kommentar" style="width: 400px; height: 160px; border-radius: 5px;" id="tekstFelt"></textarea>
-			<br>
-			<input type="submit" value="Send">
-        </main>
-	</form>
-		</div>
-	</section>
-</div>
+<!-- Footer -->
+	<div id="footer"></div>
 
-<div id="footer"></div>
-
-	<script src="../scripts/rollOverMenu.js"></script>
+    <!-- Javascripts -->
+    <!-- Javascript for loading nav and footer -->
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+            $("#footer").load("footer.html");
+        });
+    </script> 
+    <!-- Javascript for loading mouse over menu -->
+    <script src="../scripts/rollOverMenu.js"></script>
+    <!-- Javascript for validating contact scheema -->
+    <script src="../scripts/contact.js"></script>
 </body>
 </html>

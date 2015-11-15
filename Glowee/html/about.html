@@ -1,47 +1,61 @@
+<!DOCTYPE html>
+
+<!--
+    FILE NAME: html/about.html
+    WRITTEN BY: Lars Vattøy
+    WHEN: November 2016
+    PURPOSE: A page about Glowee and the owner
+-->
+
 <html>
+
+<!-- Page title and link to style sheet -->
 <head>
-	<title>Om oss</title>
+	<title>Glowee</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="../style/style.css">
+</head>
 
-    <script src="../scripts/jquery-1.11.3.min.js"></script>
-    <script> 
-    $(function(){
-    $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
-    $("#footer").load("footer.html");
-    });
-    </script> 
-    </head>
+<!-- Body, main element on page -->
 <body>
 	<div class ="page-wrap">
-<div id="header"></div>
-
-	<section class="main-section">
+		<!-- Header -->
+		<div id="header"></div>
+		<section class="main-section">
+		
+		<!-- About glowee-->
 		<h2>Om Glowee</h2>
 		<div class = "section-about">
-<p style="font-weight:bold;">Glowee inc. er en nystartet bedrift som satser stort på glowprodukter. Nettbutikken er opppe å går i løpet av 2015, og er klar til å ta opp kampen med de etablerte.</p>
-<br>
-<p>Vårt mål er å tilby kunden et stort utvalg av glow-produkter til en konkuransedyktig pris. Vi vil nå ut til flest mulig kunder, og tilby dem et bredt spekter spekter med produkter.</p>
-<br>
-<p>Vår forettningside er å effektivt tilby produkter etter forespørsel. Siden denne typen produkter er veldig populære i festival og fest sammenheng, vil vi tilby kampanjer og partypakker når det er aktuelt.</p>
-<br>
-<p>Vår visjon er å bli en av norges mest kundevnnlige butikker. </p>
-<br>
-Glowee.inc er en bedrift startet i 2015. Vi er per dags dato 20 medarbeidere, men ser på
-muligheter til å utvide. Bedriften er delt inn i ulike avdeliger etter arbeidsområde.
-De ulike avdeligene bestående av: nettbutikk, logistikk, salg, økonomi og kommunikasjon.
-Den nåværende lokasjonen for bedriften er 7051 Trondheim.</p>
-<br>
-<p>Glowe har meget dedikerte og engasjerte medarbeidere. Disse er bedriftens viktigste ressurs, og er derfor de viktigste kriteriene for suksess.</p>
-<br>
-<p> Våre målgrupper er først å fremst i Norge, men i løpet av en 10 års plan, har vi et ønsket om å utvide til å nå folkemengder i hele Norden.</p>
-</div>
-</div>
+			<p style="font-weight:bold;">Glowee inc. er en nystartet bedrift som satser stort på glowprodukter. Nettbutikken er opppe å går i løpet av 2015, og er klar til å ta opp kampen med de etablerte.</p>
+			<br>
+			<p>Vårt mål er å tilby kunden et stort utvalg av glow-produkter til en konkuransedyktig pris. Vi vil nå ut til flest mulig kunder, og tilby dem et bredt spekter spekter med produkter.</p>
+			<br>
+			<p>Vår forettningside er å effektivt tilby produkter etter forespørsel. Siden denne typen produkter er veldig populære i festival og fest sammenheng, vil vi tilby kampanjer og partypakker når det er aktuelt.</p>
+			<br>
+			<p>Vår visjon er å bli en av norges mest kundevnnlige butikker. </p>
+			<br>
+			<p>Glowee.inc er en bedrift startet i 2015. Vi er per dags dato 20 medarbeidere, men ser på muligheter til å utvide. Bedriften er delt inn i ulike avdeliger etter arbeidsområde. De ulike avdeligene bestående av: nettbutikk, logistikk, salg, økonomi og kommunikasjon. Den nåværende lokasjonen for bedriften er 7051 Trondheim.</p>
+			<br>
+			<p>Glowe har meget dedikerte og engasjerte medarbeidere. Disse er bedriftens viktigste ressurs, og er derfor de viktigste kriteriene for suksess.</p>
+			<br>
+			<p> Våre målgrupper er først å fremst i Norge, men i løpet av en 10 års plan, har vi et ønsket om å utvide til å nå folkemengder i hele Norden.</p>
+		</div>
 	</section>
+</div>
 
+	<!-- Footer -->
+	<div id="footer"></div>
 
-<div id="footer"></div>
-
-	<script src="../scripts/rollOverMenu.js"></script>
+    <!-- Javascripts -->
+    <!-- Javascript for loading nav and footer -->
+    <script src="../scripts/jquery-1.11.3.min.js"></script>
+    <script> 
+        $(function(){
+            $("#header").load("header.html"); // loads the  header and the footer into into the HTML document
+            $("#footer").load("footer.html");
+        });
+    </script> 
+    <!-- Javascript for loading mouse over menu -->
+    <script src="../scripts/rollOverMenu.js"></script>
 </body>
 </html>
