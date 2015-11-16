@@ -80,7 +80,7 @@ html,body {
   width: 118px;
   text-decoration: none;
   color: white;
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 14px;
   height: auto;
 }
@@ -97,7 +97,7 @@ html,body {
   padding: 9px;
   text-decoration: none;
   color: white;
-  font-family: "Arial", sans-serif;
+  font-family: "Helvetica", sans-serif;
   font-size: 14px;
 }
 
@@ -164,7 +164,7 @@ html,body {
 /*CSS for text*/
 
 h2 {
-    font-family: "Lucida Console", sans-serif, "Arial";
+    font-family: "Helvetica", sans-serif, "Arial";
     text-transform: uppercase;
     color: #26FC00;
     font-size: 40px;
@@ -175,7 +175,7 @@ h2 {
 }
 
 .section-title {
-    font-family: "Lucida Console", sans-serif, "Arial";
+    font-family: "Helvetica", sans-serif, "Arial";
     text-transform: uppercase;
     color: #26FC00;
     font-size: 34px;
@@ -186,7 +186,7 @@ h2 {
 }
 
 .news-text {
-  font-family: "Lucida Console", sans-serif;
+  font-family: "Helvetica", sans-serif;
   text-transform: uppercase;
   color: grey;
   font-size: 20px;
