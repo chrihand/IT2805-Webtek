@@ -274,7 +274,7 @@ td {
     list-style: none;
     display: block;
     float: left;
-    text text-align: left;
+   text-align: left;
 }
 
 .sitemap ul a, .sitemap ul a:visited {
