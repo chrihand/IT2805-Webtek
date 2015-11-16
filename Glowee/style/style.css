@@ -116,6 +116,7 @@ html,body {
 
 #slideShow {
   display: block;
+  margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
   width: 925px;
@@ -172,12 +173,22 @@ html,body {
 /*CSS for text*/
 
 h2 {
-    font-family: "Lucida Console", sans-serif;
+    font-family: "Lucida Console", sans-serif, "Arial";
     text-transform: uppercase;
     color: #26FC00;
     font-size: 34px;
     font-weight: 100;
     padding-top: 5%;
+    padding-left: 12%;
+}
+
+.section-title {
+    font-family: "Lucida Console", sans-serif, "Arial";
+    text-transform: uppercase;
+    color: #26FC00;
+    font-size: 34px;
+    font-weight: 100;
+    padding-top: 1.5%;
     padding-left: 12%;
 }
 
@@ -187,6 +198,7 @@ h2 {
   color: grey;
   font-size: 20px;
   padding-left: 12%;
+  margin-top: 50px;
 }
 
 .section-text {
@@ -201,6 +213,7 @@ h2 {
 .section-products-back a {
   text-decoration: none;
   padding-left: 12%;
+  padding-top: 
   color: grey;
 }
 
