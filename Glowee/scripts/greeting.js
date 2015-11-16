@@ -10,8 +10,14 @@ if (hourNow >= 18) {
 else if (hourNow >= 12) {
     greeting = "God ettermiddag, og velkommen til Glowee"
 }
-else if (hourNow >= 0) {
+else if (hourNow >= 9) {
+    greeting = "God Formiddag, og velkommen til Glowee"
+}
+else if (hourNow >= 6) {
     greeting = "God morgen, og velkommen til Glowee"
+}
+else if (hourNow >= 0) {
+    greeting = "God natt, og velkommen til Glowee"
 }
 else {
     greeting = "Velkommen til Glowee"
