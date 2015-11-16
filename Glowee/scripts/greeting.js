@@ -5,19 +5,19 @@ var greeting; //Creates an empty variable, to be set later in the program
 var sourceTxt = document.getElementById("sectionTitle");
 
 if (hourNow >= 18) {
-    greeting = "God Kveld, og velkommen til Glowee"
+    greeting = "God Kveld, og velkommen!"
 }
 else if (hourNow >= 12) {
-    greeting = "God ettermiddag, og velkommen til Glowee"
+    greeting = "God ettermiddag, og velkommen!"
 }
 else if (hourNow >= 9) {
-    greeting = "God Formiddag, og velkommen til Glowee"
+    greeting = "God Formiddag, og velkommen!"
 }
 else if (hourNow >= 6) {
-    greeting = "God morgen, og velkommen til Glowee"
+    greeting = "God morgen, og velkommen!"
 }
 else if (hourNow >= 0) {
-    greeting = "God natt, og velkommen til Glowee"
+    greeting = "God natt, og velkommen!"
 }
 else {
     greeting = "Velkommen til Glowee"
