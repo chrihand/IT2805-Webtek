@@ -166,7 +166,7 @@ h2 {
     font-family: "Lucida Console", sans-serif, "Arial";
     text-transform: uppercase;
     color: #26FC00;
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 100;
     padding-top: 5%;
     margin-right: 20%;
@@ -218,7 +218,6 @@ h2 {
 }
 
 .section-about {
-  padding-top: 2%;
   margin-right: 20%;
   margin-left: 20%;
   color: grey;
